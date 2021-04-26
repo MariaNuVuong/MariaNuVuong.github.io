@@ -1,0 +1,37 @@
+/*Such CSS. Very Style. Much Format. Wow.*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: 'TESLA';
+  src: url('TESLA.ttf');
+}
+html { 
+  background: url(https://alexhlpham.github.io/images/waterwindow.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+	font-family: 'Open Sans';
+;
+}
+
+ul {
+	font-family: 'Open sans';
+	font-size: 22px;
+}
+
+p {
+	text-align:center;
+	font-family: 'Open sans';
+	font-size: 75px;
+}
+
+div {
+	text-align:center;
+	color:red;
+	font-family: 'TESLA';
+	font-size:75px;
+	margin-top:30%;
+}

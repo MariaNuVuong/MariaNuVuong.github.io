@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html>
+<head>
+<title>HTDT</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!--stop_trying_to_cheat_you_clever_person_LOL-->
+<body>
+<p id="reveal"/>
+ <script>
+	var countDownDate = new Date("May 1, 2021 14:00:00 PDT").getTime();
+	var x = setInterval(function() {
+	var now = new Date().getTime();
+	var distance = countDownDate - now;
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance / (1000 * 60 * 60))% 24);
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("reveal").innerHTML = "MNV Mission unlocking in: " +days + " days "+hours + "h "    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("reveal").innerHTML = "Mission Initiated";
+    }
+}, 1000);
+</script>
+<div></div>
+</body>
+</html>
